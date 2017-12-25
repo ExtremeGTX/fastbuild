@@ -139,7 +139,9 @@ bool CompilerNode::InitializeCompilerFamily( const BFFIterator & iter, const Fun
         if ( compiler.EndsWithI( "gcc.exe" ) ||
              compiler.EndsWithI( "gcc" ) ||
              compiler.EndsWithI( "g++.exe" ) ||
-             compiler.EndsWithI( "g++" ) )
+             compiler.EndsWithI( "g++" ) ||
+             compiler.EndsWithI( "dcc.exe" ) ||
+             compiler.EndsWithI( "dcc" ) )
         {
             m_CompilerFamilyEnum = GCC;
             return true;
